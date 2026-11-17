@@ -1,0 +1,225 @@
+#operators
+#arithmetic operators
+'''a=7
+b=3
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a//b)
+print(a%b)
+print(a**3)'''
+
+#relational operators
+'''a=7
+b=5
+print(a==b)
+print(a!=b)
+print(a>b)
+print(a<b)
+print(a>=b)'''
+
+#assignment operators
+
+"""a=5
+print(a)
+a+=2
+#a=a+2
+print(a)
+a-=1
+print(a)
+a*=5
+print(a)
+a/=3
+print(a)
+a%=2
+print(a)"""
+#logical operators
+'''a=3
+b=5
+print(a>b and a<b)
+print(a!=b and a<b)
+print(a>b or a<b)
+print(a!=b or a<b)
+print(not(b>a))
+
+#bitwise operators
+a=5
+b=3
+print(a&b)
+print(a|b)
+print(a^b)
+print(~a)
+print(a<<2)
+print(a>>1)'''
+
+#special operators
+
+'''a=[2,4,6,8,10]
+print(2 in a)
+print(10 not in a)
+lw=["nisha","nithya","xyz"]
+print("isha" in lw)
+print("nisha" not in lw)'''
+
+#identity operators
+'''a=[1,3,5]
+b=a
+c=[1,3,5]
+print(a==c)
+print(a is c)
+print(a is b)
+print(a is not c)'''
+
+
+#input
+'''a=input("enter a number:")
+b=input("enter a number:")
+print(a+b)
+a=input("enter a number:")
+b=input("enter a number:")
+print(a+b)
+a=int(input("enter a number:"))
+b=int(input("enter a number:"))
+print(a+b)
+a=int(input("enter a number:"))
+b=int(input("enter a number:"))
+print(a+b)'''
+'''person_name=input("enter your name")
+age=input("enter your age")
+w=input("enter your weight")
+print("your name is",person_name,"your age is",age,"your weight is",)'''
+
+#control startements
+#if
+'''if condition:'''
+'''a=3
+if a>4:
+    print("a is greater than 4")'''
+
+#if-else
+'''a=int(input("enter a number"))
+if a>4:
+    print("a is greater than 4")
+else:
+    print("condition false")'''
+
+#ex
+'''med_name=input("enter your medicine name")
+age=int(input("enter your age"))
+if age>2:
+    
+    print("safe to use",med_name)
+else:
+    print("not safe under age",med_name)'''
+#if elif else
+'''marks = 75
+if marks >= 90:
+    print("Grade A")
+elif marks >= 70:
+    print("Grade B")
+elif marks>=50:
+    print("Grade c")
+else:
+    print("fail")'''
+#nested if
+marks = int(input("enter you marks"))
+if marks >= 90:
+    print("Grade A")
+    scholar=input("scholarship yes/no")
+    if(scholar=="yes"):
+        print("you can claim")
+    else:
+        print("you are not able to claim")
+    
+elif marks >= 70:
+    print("Grade B")
+elif marks>=50:
+    print("Grade c")
+else:
+    print("fail")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
