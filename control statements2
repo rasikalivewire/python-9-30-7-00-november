@@ -1,0 +1,152 @@
+#for loop
+#patterns
+'''n=int(input("enter a number"))
+for i in range(n):
+    for j in range(n):
+        print('*',end=" ")
+    print()
+
+n=int(input("enter a number"))
+for i in range(n):
+    for j in range(i,n):
+        print('*',end=" ")
+    print()
+
+n=int(input("enter a number"))
+for i in range(n):
+    for j in range(i+1):
+        print('*',end=" ")
+    print()'''
+
+#number base dpatterns
+'''n=int(input("enter a number"))
+for i in range(n):
+    for j in range(i,n):
+        print(i,end=" ")
+    print()
+
+n=int(input("enter a number"))
+for i in range(n):
+    for j in range(i+1):
+        print(i,end=" ")
+    print()
+n=int(input("enter a number"))
+for i in range(n):
+    for j in range(i,n):
+        print(j,end=" ")
+    print()
+
+n=int(input("enter a number"))
+for i in range(n):
+    for j in range(i+1):
+        print(j,end=" ")
+    print()
+
+#number
+n=int(input("enter a number"))
+p=1
+for i in range(n):
+    for j in range(i,n):
+        print(p,end="  ")
+        p+=1
+    print()
+
+n=int(input("enter a number"))
+p=65
+for i in range(n):
+    for j in range(i,n):
+        print(chr(p),end="  ")
+        p+=1
+    print()'''
+
+#while loop
+#increment
+'''i=1
+while i<10:
+    print(i)
+    i+=1
+
+#decrement
+i=10
+while i>2:
+    print(i)
+    i-=1'''
+#infinite
+'''while True:
+    print("hello nisha")'''
+
+#increment score card
+'''score=0
+while score<=100:
+    if score<=20:
+        print("score card:python champion",score)
+    elif score<=60:
+        print("score card:data progressing sql,excel",score)
+    else:
+        print("winner ",score)
+    score+=10
+
+#game life
+life=3
+while life>0:
+    if life==3:
+        print("safe buddy",life)
+    else:
+        print("danger",life)
+    life-=1'''
+#transfer and jumping
+#pass
+'''class nisha:
+    pass
+#break
+for i in range(2,8):
+    if (i==5):
+        break
+    else:
+        print(i)'''
+#continue
+for i in range(2,8):
+    if (i==5):
+        continue
+    else:
+        print(i)
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
