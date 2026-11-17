@@ -1,0 +1,165 @@
+#medicine suggestion
+
+'''symptom=input("choose your symptoms:1.fever  2.throat pain  3.cold 4.allergy 5.headache")
+if(symptom=="fever"):
+    print("you can use paracetamol")
+    age=int(input("enter your age:"))
+    if(age<3):
+            print("under age")
+    elif(age<10):
+        print("half dosage")
+    else:
+        print("you can take medicine")
+elif(symptom=="throat pain"):
+    print("you can use antibiotic")
+elif(symptom=="cold"):
+    print("you can use azee")
+elif(symptom=="headache"):
+    print("you can use diclofenac")
+elif(symptom=="allergy"):
+    print("you can use histamine")
+else:
+    print("you symptoms not listed")'''
+
+#for loop
+'''="nisha"
+print(a)
+name="nisha"
+for i in name:
+    print(i,end="")
+
+a=[1,23,34,67]
+for i in a:
+    print(i)
+
+food=["biriyani","fish","chciken"]
+for f in food:
+    print(f)'''
+
+
+#for loop increment
+#for  variable in range(start,stop,step)
+'''for i in range(10,50,5):
+    print(i,end=" ,")
+
+for i in range(1,25):
+    print(i,end=" ,")
+
+for i in range(20):
+    print(i)'''
+
+#decrement
+'''for i in range(25,4,-3):
+    print(i,end=" ,")'''
+
+#for else
+'''for a in range(5):
+    print(a)
+else:
+    print("loop ends")'''
+#dictionary
+'''data={"name":"nisha","age":24}
+print(data.keys())
+for k,v in data.items():
+    print(k,v)
+
+food=["biriyani","fish","chciken"]
+for i,f in enumerate(food):
+    print(i,f)'''
+
+#factorial
+'''number=int(input("enter  a number"))
+
+f=1
+for i in range(1,number+1):
+    f*=i
+print(f)
+
+#for if else
+a=[1,2,3,4,5,6]
+r=["even" if x%2==0 else"odd" for x in a]
+print(r)
+
+a=[1,2,3,4,5,6]
+for x in a:
+    if x%2==0:
+        print("even")
+    else:
+        print("odd")'''
+#nested for loop
+for x in range(9,15):
+    for y in range(10,16):
+        print(x,y)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
