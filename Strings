@@ -1,0 +1,82 @@
+'''n="nishanthini malaiARAsan"
+print(n.upper())
+print(n.lower())
+print(n.capitalize())
+print(n.title())
+print(n.swapcase())
+print(n.casefold())
+print(n.isupper())
+print(n.islower())'''
+
+n="nisha12"
+'''print(n.isdigit())
+print(n.isalpha())
+print(n.isnumeric())
+print(n.isalnum())'''
+
+n="Trichyy"
+'''print(n.startswith('T'))
+print(n.endswith('hy'))
+print(n.find('c'))
+print(n.index('h'))
+print(n.find('n'))
+print(n.count('y'))'''
+
+'''n="       dolo         "
+print(n.strip())
+print(n.lstrip())
+print(n.rstrip())
+print(n.center(30,"*"))
+n="nisha12"
+print(n.zfill(15))
+
+n="i like fish"
+print(n.replace("like","hate"))
+
+words = ["i", "like", "serials"]
+
+print(" ".join(words))
+
+text = "tit or tat"
+
+print(text.split())'''
+#string slicing
+n="cardiologyheart"
+print(n[2:8:2])
+print(n[2:8:])
+print(n[:10:])
+print(n[:10:2])
+print(n[:14:1])
+print(n[::-1])
+print(n[-10:-2:3])
+
+#palindrome
+'''e="madam"
+f=e[::-1]
+print(f)
+if(e==f):
+    print("palindrome")
+else:
+    print("not palindrome")'''
+
+
+#encode decode
+e=input("enter your string")
+encoding=e.encode("utf-8")
+print(encoding)
+decoding=encoding.decode("utf-8")
+print(decoding)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
