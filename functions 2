@@ -1,0 +1,93 @@
+#variable length arguments
+#positional
+'''def phone(*model):
+    print(model)
+phone("s20","a05","one+")
+
+def teashop(*tea):
+    print(tea)
+teashop("ginger tea","sukku tea","green tea","mint tea")'''
+#keyword
+'''def lunchmenu(**order):
+    print(order)
+lunchmenu(soup="chicken",lunch="rice",curry="fish",drink="lemon",dessert="brownie")
+'''
+
+#lambda
+'''cube=lambda x:x**3
+print(cube(9))
+
+mul= lambda x,y:x*y
+print(mul(7,8))
+
+maxi=lambda x,y:x if x>y else y
+print(maxi(5,2))
+
+#map
+a=[6,19,7,5,8,82,82,4,9,3,11,108,65,71]
+rank=list(map(lambda x:x+5,a))
+print(rank)
+
+a=[6,19,7,5,8,82,82,4,9,3,11,108,65,71]
+rank=list(map(lambda x:sum(a)/15,a))
+print(rank)'''
+
+
+#filter
+'''a=[6,19,7,5,8,82,4,9,3,121,108,65,71]
+rank=list(filter(lambda x:x>100,a))
+print(rank)
+#recursive
+
+def factorial(n):
+
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print(factorial(7)) '''   
+
+
+#fibbbo
+'''n=int(input("entera number"))
+a=0
+b=1
+for i in range(n):
+    print(a,end=" ,")
+    c=a+b
+    a=b
+    b=c'''
+'''a=6
+b=7
+print(a,b)
+c=a+b
+a=b
+b=c-b
+print(a,b) '''  
+    
+'''def fibbo(n):
+
+    if n <= 1:
+        return n
+    else:
+        return fibbo(n - 1)+fibbo(n-2)
+
+print(fibbo(10))'''
+#prime number 
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+            
+    return True
+
+num = int(input("Enter a number: "))
+
+if is_prime(num):
+    print(f"{num} is a prime number.")
+else:
+    print(f"{num} is not a prime number.")
+
