@@ -1,0 +1,104 @@
+
+from plyer import notification, battery, gps, camera, vibrator
+
+# Global variables
+latitude = None
+longitude = None
+
+
+# GPS Callback Function
+def get_location(**kwargs):
+    global latitude, longitude
+
+    latitude = kwargs.get("lat")
+    longitude = kwargs.get("lon")
+
+    print("\n--- GPS Location ---")
+    print("Latitude:", latitude)
+    print("Longitude:", longitude)
+
+
+# Camera Callback Function
+def camera_completed(filename):
+    print("\nPhoto saved successfully:", filename)
+
+
+# Get Student Details
+name = input("Enter Student Name: ")
+assignment = input("Enter Assignment Name: ")
+status = input("Enter Submission Status: ")
+
+print("\n--- STUDENT DETAILS ---")
+print("Name:", name)
+print("Assignment:", assignment)
+print("Status:", status)
+
+
+# 1. Desktop Notification
+notification.notify(
+    title="Student Assignment Alert",
+    message=f"Student: {name}\nStatus: {status}",
+    timeout=10
+)
+
+
+# 2. Battery Information
+try:
+    battery_info = battery.status
+
+    print("\n--- BATTERY INFORMATION ---")
+    print("Battery Percentage:",
+          battery_info.get("percentage"), "%")
+    print("Charging Status:",
+          battery_info.get("isCharging"))
+
+except Exception as e:
+    print("Battery information unavailable:", e)
+
+
+# 3. GPS Location
+try:
+    gps.configure(on_location=get_location)
+    gps.start(minTime=1000, minDistance=1)
+
+    print("\nGPS tracking started.")
+
+    input("Press Enter after GPS location is received...")
+
+    gps.stop()
+
+except Exception as e:
+    print("GPS not supported:", e)
+
+
+# 4. Camera Capture
+try:
+    result = camera.take_picture(
+        filename="student_photo.jpg",
+        on_complete=camera_completed
+    )
+
+    if result is False:
+        print("Camera capture failed.")
+
+except Exception as e:
+    print("\nCamera not supported:", e)
+
+
+# 5. Device Vibration
+try:
+    vibrator.vibrate(time=2)
+    print("\nDevice vibration activated.")
+
+except Exception as e:
+    print("Vibration not supported:", e)
+
+
+# Final Notification
+notification.notify(
+    title="Student Monitoring System",
+    message="All available operations completed!",
+    timeout=10
+)
+
+print("\nSmart Student Monitoring System Completed!")
