@@ -1,0 +1,29 @@
+import pyttsx3
+#
+# engine = pyttsx3.init()
+#
+# # Set speaking speed
+# engine.setProperty('rate', 150)
+#
+# # Set volume
+# engine.setProperty('volume', 5.0)
+#
+#
+# # Speak message
+# engine.say("Hello nisha nisha nisha, welcome to Python class")
+#
+# engine.runAndWait()
+
+import pyttsx3
+
+engine = pyttsx3.init()
+
+name = input("Enter Student Name: ")
+status = input("Enter Attendance (Present/Absent): ")
+
+message = f"Student {name} is marked {status}"
+
+print(message)
+
+engine.say(message)
+engine.runAndWait()
