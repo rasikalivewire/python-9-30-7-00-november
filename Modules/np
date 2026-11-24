@@ -1,0 +1,8 @@
+# from PIL import Image
+# import numpy as np
+# img=Image.open(r"C:\Users\Livewire\Downloads\image.jpg")
+# img.show()
+#
+# a=np.array(img)
+# print(a)
+
