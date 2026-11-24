@@ -1,0 +1,47 @@
+import pywhatkit as kit
+#
+# 1. Google Search
+kit.search("Python Programming")
+
+# 2. Play YouTube Video
+kit.playonyt("Python Tutorial")
+
+# 3. Wikipedia Summary
+kit.info("Python Programming", lines=3)
+
+#4. Convert Text to Handwriting
+kit.text_to_handwriting(
+    "Welcome to Python Programming",
+    save_to="handwriting.png"
+)
+
+# 5. Convert Text to Speech
+kit.text_to_speech(
+    "Hello, welcome to Python",
+    save_to="speech.mp3"
+)
+# #
+# # 6. Send WhatsApp Message Instantly
+# # Uncomment and replace with valid number
+# # kit.sendwhatmsg_instantly(
+# #     "+911234567890",
+# #     "Hello from Python!"
+# # )
+# #
+# # 7. Send Scheduled WhatsApp Message
+# # Uncomment and replace with valid number
+# # kit.sendwhatmsg(
+# #     "+911234567890",
+# #     "Good Morning",
+# #     10, 30
+# # )
+# #
+# # 8. Send WhatsApp Image
+# # Uncomment and replace with valid number
+# # kit.sendwhats_image(
+# #     "+911234567890",
+# #     "photo.jpg",
+# #     "Sample Image"
+# # )
+#
+# print("All pywhatkit functions executed successfully!")
